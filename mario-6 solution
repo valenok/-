@@ -1,0 +1,18 @@
+function printPyramid(height) {
+	var countChart = 2;
+	var result;
+for (var i = 0; i < height; i++){
+	var resSpace = '';
+	var resChart = '';
+	var countI = 0;
+	for (countI; countI < height+1-countChart; countI++){
+		resSpace = resSpace + " ";
+	}
+		for (var j = 0; j < countChart; j++){
+			resChart = resChart + "#";
+		}
+	countChart++;
+	result = resSpace + resChart;
+	console.log(result);
+	}
+}
